@@ -9,7 +9,19 @@
 </head>
 
 <body>
+    <div class="controls">
+        <button class="btn btn-primary" id="add-pizza"></button>
+    </div>
+    <ul class="pizzas-list"></ul>
     <script type="text/javascript" src="main.js"></script>
+    <script type="text/template" data-template="pizza">
+        <li class="pizza" data-id="{{id}}">
+            {{id}}
+            <div class="pizza-controls">
+                <a href="#" class="remove-pizza">X</a>
+            </div>
+        </li>
+    </script>
 </body>
 
 </html>
